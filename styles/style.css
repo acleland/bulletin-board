@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     /* font-family: 'Titillium Web', sans-serif; */
     --navy: #002642;
@@ -8,6 +14,9 @@ body {
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     background-color: var(--white);
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -25,6 +34,13 @@ header h1 {
     font-weight: 100;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #bulletin-container {
     border: 1rem solid #840032;
     height: 30em;
@@ -32,5 +48,46 @@ header h1 {
     background-image: url('../assets/bulletinboard.jpg');
     /* background-color: var(--yellow); */
     border-radius: 1rem;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80vw;
+    height: 75vh;
+    min-width: calc(10em + 40px);
     
+}
+
+.sticky-note {
+    background-color: #E59500;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    width: 11em;
+    height: 11em;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+}
+
+.sticky-note h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+
+.sticky-note p {
+    padding-top: 1em;
+    font-family: cursive;
+    font-size: .7rem;
+    font-weight: normal;
+    margin: 0;
+}
+.sticky-note p.contact {
+    
+    font-size: 0.7rem;
+    font-family: sans;
 }
