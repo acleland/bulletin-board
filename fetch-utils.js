@@ -11,3 +11,4 @@ export async function getPosts() {
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }
+
