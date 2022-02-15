@@ -28,7 +28,7 @@ header h1 {
 #bulletin-container {
     border: 1rem solid #840032;
     height: 30em;
-    width: 40em;
+    width: 45em;
     background-image: url('../assets/bulletinboard.jpg');
     /* background-color: var(--yellow); */
     border-radius: 1rem;
