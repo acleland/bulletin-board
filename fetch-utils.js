@@ -19,7 +19,7 @@ export function getUser() {
 
 export async function redirectIfLoggedIn() {
     if (getUser()) {
-        location.replace('./');
+        location.replace('/');
     }
 }
 
@@ -30,7 +30,7 @@ export async function getPosts() {
 
 export async function logout() {
     await client.auth.signOut();
-    // return (window.location.href = '../');
+    return (window.location.href = '../');
 }
 
 function checkError({ data, error }) {
