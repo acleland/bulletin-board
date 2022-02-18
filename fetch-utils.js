@@ -28,7 +28,11 @@ export async function getPosts() {
     return checkError(resp);
 }
 
+export async function logout() {
+    await client.auth.signOut();
+    // return (window.location.href = '../');
+}
+
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }
-

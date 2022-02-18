@@ -91,3 +91,7 @@ main {
     font-size: 0.7rem;
     font-family: sans;
 }
+
+.log-button.hide {
+    display: none;
+}
