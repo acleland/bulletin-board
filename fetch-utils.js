@@ -3,6 +3,26 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
+export async function signInUser(email, password) {
+    const resp = await client.auth.signIn({ email, password });
+    return resp.user;
+}
+
+export async function signUpUser(email, password) {
+    const resp = await client.auth.signUp({ email, password });
+    return resp.user;
+}
+
+export function getUser() {
+    return client.auth.session() && client.auth.session().user;
+}
+
+export async function redirectIfLoggedIn() {
+    if (getUser()) {
+        location.replace('./');
+    }
+}
+
 export async function getPosts() {
     const resp = await client.from('bulletins').select('*');
     return checkError(resp);

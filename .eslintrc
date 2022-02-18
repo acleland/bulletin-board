@@ -19,7 +19,7 @@
     },
     "rules": {
         "eqeqeq": ["error", "always"],
-        "no-console": "warn",
+        // "no-console": "warn",
         "indent": [
             "error",
             4,
