@@ -5,7 +5,7 @@ import { renderPosts } from './render-utils.js';
 const bulletinContainer = document.getElementById('bulletin-container');
 const logoutButton = document.getElementById('logout');
 const loginButton = document.getElementById('login');
-const createButton = document.getElementById('create');
+// const createButton = document.getElementById('create');
 
 window.addEventListener('load', async () => {
     if (getUser()) {
