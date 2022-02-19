@@ -14,11 +14,13 @@
         <h2>Create a bulletin:</h2>
         <section class="form-container">
             <form action="" id="create-form">
+                <label for="title">Bulletin title:</label>
+                <input type="text" id="bulletin-title" name="title" class="form-element">
                 <label for="message">Enter your message:</label>
-                <textarea name="message" id="message" class="sticky-note" cols="40" rows="10"></textarea>
+                <textarea name="message" id="message" class="sticky-note form-element" cols="40" rows="10"></textarea>
                 <label for="contact">How to contact you:</label>
-                <input type="text" id="contact" name="contact">
-                <button id="create-button">Post Bulletin</button>
+                <input type="text" id="contact" name="contact" class="form-element">
+                <button id="create-button" class="form-element">Post Bulletin</button>
             </form>
         </section>
         

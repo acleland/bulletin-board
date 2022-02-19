@@ -7,21 +7,37 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     background-color: var(--white);
     padding: 1rem;
+    width: 80%;
+    background-image: url(/assets/bulletinboard.jpg);
 }
 
 textarea {
     padding: 1rem;
     margin: 1rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     background-color: var(--yellow);
     font-family: sans;
     font-size: 1.5em;
 }
 
 .form-container {
+    display: flex;
+    justify-content: center;
     padding: 2rem;
     background-color: var(--red);
     border-radius: 5px;
+    width: 80%;
+}
+
+.form-element {
+    margin: .5em;
+    /* background-color: var(--yellow); */
+}
+
+label {
+    background-color: rgba(253, 252, 252, 0.692);
+    padding: .2em 1em;
 }
