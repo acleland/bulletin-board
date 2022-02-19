@@ -28,6 +28,13 @@ export async function getPosts() {
     return checkError(resp);
 }
 
+export async function createPost(bulletin) {
+    console.log('createPost is called');
+    const { title, message, contact, user_id } = bulletin;
+    const resp = await client.from('bulletins').insert([{ title, message, contact, user_id }]);
+    return checkError(resp);
+}
+
 export async function logout() {
     await client.auth.signOut();
     return (window.location.href = '../');
