@@ -95,3 +95,7 @@ main {
 .log-button.hide {
     display: none;
 }
+
+a {
+    text-decoration: none;
+}
