@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./create.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <title>Create Bulletin</title>
+</head>
+<body>
+    <main>
+        <h2>Create a bulletin:</h2>
+        <section class="form-container">
+            <form action="" id="create-form">
+                <label for="title">Bulletin title:</label>
+                <textarea type="text" id="bulletin-title" name="title" class="form-element sticky-note"></textarea>
+                <label for="message">Enter your message:</label>
+                <textarea name="message" id="message" class="sticky-note form-element" cols="40" rows="10"></textarea>
+                <label for="contact">How to contact you:</label>
+                <textarea type="text" id="contact" name="contact" class="form-element"></textarea>
+                <button id="create-button" class="form-element">Post Bulletin</button>
+                <button id="cancel">Cancel</button>
+            </form>
+            
+        </section>
+        
+    </main>
+    <script src="./create.js" type="module"></script>
+</body>
+</html>
