@@ -21,6 +21,7 @@ textarea {
     background-color: var(--yellow);
     font-family: sans;
     font-size: 1.5em;
+    height: 1.7em;
 }
 
 .form-container {
@@ -35,9 +36,20 @@ textarea {
 .form-element {
     margin: .5em;
     /* background-color: var(--yellow); */
+    height: auto;
 }
 
 label {
     background-color: rgba(253, 252, 252, 0.692);
     padding: .2em 1em;
+}
+
+#bulletin-title {
+    width: 10em;
+    /* height: 1.2em; */
+    font-weight: bold;
+    overflow-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

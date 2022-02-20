@@ -1,6 +1,7 @@
 import { getUser, createPost } from '/fetch-utils.js';
 
 const createForm = document.getElementById('create-form');
+const cancelButton = document.getElementById('cancel');
 
 createForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -18,4 +19,8 @@ createForm.addEventListener('submit', async (e) => {
         console.error('Cannot create post without being logged in.');
     }
     
+});
+
+cancelButton.addEventListener('click', () => {
+    location.replace('/');
 });
